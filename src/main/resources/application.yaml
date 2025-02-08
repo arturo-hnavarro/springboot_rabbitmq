@@ -5,4 +5,26 @@ spring:
         host: "localhost"
         port: 5672
         username: "admin"
-        password: "secret"
+        password: "admin"
+        retry:
+            enabled: true
+            max-attempts: 3
+            delay: 1000
+
+rabbitmq:
+    retry:
+        delay-in-ms: 1000
+        count: 3
+        
+com:
+    arturo:
+        projects:
+            rabbitmq:
+                config:
+                    queue:
+                        name: "orders"
+                        exchange: "orders"
+                        routing: "orders"  
+
+
+
