@@ -18,4 +18,3 @@ A publisher sends messages to a named exchange and a consumer pulls messages fro
     2. Topic: Same as Direct, but wildcards are allowed in the binding key. '#' matches zero or more dot-delimited words and '*' matches exactly one such word.
     3. Fanout: all published messages go to all bound queues. The routing and binding keys are ignored.
     
-Esto es un nuevo Feature de actualizacion de la documentacion del proyecto. Estoy creando un nuevo Feature con Git-flow
